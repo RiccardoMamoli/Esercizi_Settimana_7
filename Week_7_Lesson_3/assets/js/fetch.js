@@ -24,7 +24,7 @@ const getBooks = function () {
 
 
 const row = document.getElementById('row');
-// let listBook = []; 
+
 
 function createCard(listBook) {
     for (let i = 0; i < listBook.length; i++ ) {
@@ -34,7 +34,7 @@ function createCard(listBook) {
         const priceBook = listBook[i].price;
 
         const card = document.createElement('div');
-        card.classList.add('col-4', 'border-0', 'mb-4');
+        card.classList.add('col-4', 'border-0', 'mb-4', 'rounded-pill');
         row.appendChild(card);
 
         
