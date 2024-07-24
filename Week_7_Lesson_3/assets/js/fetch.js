@@ -11,10 +11,10 @@ const getBooks = function () {
                 throw new Error('Male');
             }
         })
-        .then((data) => {
-            console.log('i dati', data);
-            listBook = data;
-            createCard();
+        .then((listBook) => {
+            console.log('i dati', listBook);
+            // listBook = data;
+            createCard(listBook);
         })
 
         .catch((error) => {
@@ -24,9 +24,9 @@ const getBooks = function () {
 
 
 const row = document.getElementById('row');
-let listBook = []; 
+// let listBook = []; 
 
-function createCard() {
+function createCard(listBook) {
     for (let i = 0; i < listBook.length; i++ ) {
 
         const imgBook = listBook[i].img;
