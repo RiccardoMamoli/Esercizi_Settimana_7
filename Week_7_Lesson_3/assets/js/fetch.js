@@ -34,7 +34,7 @@ function createCard(listBook) {
         const priceBook = listBook[i].price;
 
         const card = document.createElement('div');
-        card.classList.add('col-4', 'border-0', 'mb-4', 'rounded-pill');
+        card.classList.add('col-4', 'border-0', 'mb-4');
         row.appendChild(card);
 
         
