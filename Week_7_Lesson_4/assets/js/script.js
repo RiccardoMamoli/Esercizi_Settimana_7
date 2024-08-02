@@ -286,11 +286,13 @@ function loadImages(images) {
         cardList.innerHTML += `
 
         <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
+              <div class="card mb-4 shadow-sm fixed-size">
+              <div>
                 <img
                   src= "${singleImg}"
-                  class="bd-placeholder-img card-img-top"
+                  class="bd-placeholder-img img-fluid"
                 />
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Lorem Ipsum</h5>
                   <p class="card-text">
@@ -315,7 +317,7 @@ function loadImages(images) {
                         Edit
                       </button>
                     </div>
-                    <small class="text-muted"> "${singleID}" </small>
+                    <small class="text-muted"> ${singleID} </small>
                   </div>
                 </div>
               </div>
